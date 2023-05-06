@@ -16,7 +16,7 @@
               <svg-icon slot="prefix" icon-class="user" class="el-input__icon input-icon" />
             </el-input>
           </el-form-item>
-          <el-form-item prop="password">
+          <el-form-item class="password_item" prop="password">
             <el-input
               v-model="loginForm.password"
               type="password"
@@ -28,7 +28,9 @@
               <svg-icon slot="prefix" icon-class="password" class="el-input__icon input-icon" />
             </el-input>
           </el-form-item>
-          <el-checkbox v-model="loginForm.rememberMe" style="margin: 0px 0px 25px 0px">记住密码</el-checkbox>
+          <el-form-item style="width: 100%;text-align: left;">
+            <el-checkbox v-model="loginForm.rememberMe">记住密码</el-checkbox>
+          </el-form-item>
           <el-form-item style="width: 100%">
             <el-button
               :loading="loading"
@@ -131,7 +133,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #3783af;
+  background: url("../assets/image/guitar.jpg") no-repeat 0;
   height: 100vh;
   background-size: cover;
   padding: 50px 0;
@@ -146,37 +148,42 @@ export default {
     .input-format {
       width: 340px;
       height: 440px;
-      background: #fff;
-      box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.2);
+      padding: 40px;
+      text-align: center;
+      background: #ffffff;
       border-radius: 4px;
-      padding: 40px 37px;
-      text-align: left;
+      box-shadow: 0 2px 24px 0 rgb(0 0 0 / 20%);
       .logon {
-        width: 60px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
       }
       .title {
-        font-size: 29px;
-        font-family: PingFangSC-Medium, PingFang SC;
-        font-weight: 600;
-        color: #142969;
         margin-top: 8px;
         margin-bottom: 40px;
+        // font-size: 29px;
+        font-family: PingFangSC-Medium, "PingFang SC";
+        font-weight: 600;
+        color: #142969;
       }
       .login-form {
         box-sizing: border-box;
-        margin: 0;
         padding: 0;
-        color: rgba(0, 0, 0, 0.65);
+        margin: 0;
         font-size: 14px;
+        font-feature-settings: "tnum";
         font-variant: tabular-nums;
         line-height: 1.5;
+        color: rgb(0 0 0 / 65%);
         list-style: none;
-        font-feature-settings: "tnum";
         .el-input {
           height: 38px;
           input {
             height: 38px;
           }
+        }
+        .password_item {
+          margin-bottom: 0;
         }
         .input-icon {
           height: 39px;
