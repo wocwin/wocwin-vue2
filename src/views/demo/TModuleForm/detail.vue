@@ -1,48 +1,46 @@
 <template>
-  <div class="t-module-detail-demo">
-    <t-layout sectionTitle="模块详情组件运用">
-      <div class="content-main">
-        <t-module-form
-          title="模块详情组件运用"
-          subTitle="模块详情222"
-          ref="sourceDetail"
-          handleType="desc"
-          :descData="descData"
-          :tabs="tabs"
-        >
-          <!-- tabs插槽 -->
-          <template #tab1>
-            <t-table title="常规表格" :table="baseData.table" :columns="baseData.columns" />
-          </template>
-          <template #tab2>
-            <div>指派明细</div>
-          </template>
-          <template #tab3>
-            <div>承运明细</div>
-          </template>
-          <!-- 标题右侧按钮 -->
-          <template #extra>
-            <el-button type="primary">主要按钮</el-button>
-            <el-button type="success">成功按钮</el-button>
-            <el-button type="danger">信息按钮</el-button>
-          </template>
-          <!-- 模块detail详情插槽 -->
-          <template #line>
-            <el-button type="danger">自定义模块detail插槽</el-button>
-          </template>
-          <!-- value自定义插槽 -->
-          <template #loadKgPerCar>
-            <div class="text-danger">value自定义插槽</div>
-          </template>
-        </t-module-form>
-      </div>
-    </t-layout>
-  </div>
+  <t-layout-page>
+    <t-layout-page-item>
+      <t-module-form
+        title="模块详情组件运用"
+        subTitle="模块详情222"
+        ref="sourceDetail"
+        handleType="desc"
+        :descData="descData"
+        :tabs="tabs"
+      >
+        <!-- tabs插槽 -->
+        <template #tab1>
+          <t-table title="常规表格" :table="baseData.table" :columns="baseData.columns" />
+        </template>
+        <template #tab2>
+          <div>指派明细</div>
+        </template>
+        <template #tab3>
+          <div>承运明细</div>
+        </template>
+        <!-- 标题右侧按钮 -->
+        <template #extra>
+          <el-button type="primary">主要按钮</el-button>
+          <el-button type="success">成功按钮</el-button>
+          <el-button type="danger">信息按钮</el-button>
+        </template>
+        <!-- 模块detail详情插槽 -->
+        <template #line>
+          <el-button type="danger">自定义模块detail插槽</el-button>
+        </template>
+        <!-- value自定义插槽 -->
+        <template #loadKgPerCar>
+          <div class="text-danger">value自定义插槽</div>
+        </template>
+      </t-module-form>
+    </t-layout-page-item>
+  </t-layout-page>
 </template>
 <script>
 export default {
   name: 'TModuleDetailDemo',
-  data () {
+  data() {
     return {
       baseData: {
         table: {
@@ -193,7 +191,7 @@ export default {
       }
     }
   },
-  mounted () {
+  mounted() {
     // 默认选中tab2
     // this.$refs.sourceDetail.setSelectedTab('tab2')
   }

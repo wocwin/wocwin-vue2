@@ -1,79 +1,77 @@
 <template>
-  <div class="t-module-form-demo">
-    <t-layout sectionTitle="模块表单组件运用">
-      <div class="content-main">
-        <t-module-form
-          title="模块表单组件运用"
-          subTitle="模块表单222"
-          ref="sourceForm"
-          :formOpts="formOpts"
-          :submit="submit"
-          :tabs="tabs"
-          @handleEvent="handleEvent"
-          @validateError="validateError"
-          @tabsChange="tabsChange"
-        >
-          <!-- tabs插槽 -->
-          <template #tab1>
-            <t-module-form
-              ref="sourceForm1"
-              :formOpts="formOpts"
-              :footer="null"
-              @handleEvent="handleEvent"
-            >
-              <template #wechat>
-                <div style="display:flex;">
-                  <el-input v-model="formOpts.goodsInformation.opts.formData.wechat"></el-input>
-                </div>
-              </template>
-              <template #wechat1>
-                <div style="display:flex;">
-                  <el-input v-model="formOpts.loadingDate.opts.formData.wechat1"></el-input>
-                </div>
-              </template>
-            </t-module-form>
-          </template>
-          <template #tab2>
-            <div>指派明细</div>
-          </template>
-          <template #tab3>
-            <div>承运明细</div>
-          </template>
-          <!-- 标题右侧按钮 -->
-          <template #extra>
-            <el-button type="primary">主要按钮</el-button>
-            <el-button type="success">成功按钮</el-button>
-            <el-button type="danger">信息按钮</el-button>
-          </template>
-          <!-- 表单自定义输入框插槽 -->
-          <template #wechat>
-            <div style="display:flex;">
-              <el-input v-model="formOpts.goodsInformation.opts.formData.wechat"></el-input>
-            </div>
-          </template>
-          <template #wechat1>
-            <div style="display:flex;">
-              <el-input v-model="formOpts.loadingDate.opts.formData.wechat1"></el-input>
-            </div>
-          </template>
-          <!-- 模块form表单插槽 -->
-          <template #freight>
-            <el-button type="danger">运费信息</el-button>
-            <el-button type="primary" @click="clearValidate">清除校验</el-button>
-          </template>
-          <template #lineMessage>
-            <el-button type="danger">线路信息</el-button>
-            <el-button type="primary" @click="resetForm">重置</el-button>
-          </template>
-        </t-module-form>
-      </div>
-    </t-layout>
-  </div>
+  <t-layout-page>
+    <t-layout-page-item>
+      <t-module-form
+        title="模块表单组件运用"
+        subTitle="模块表单222"
+        ref="sourceForm"
+        :formOpts="formOpts"
+        :submit="submit"
+        :tabs="tabs"
+        @handleEvent="handleEvent"
+        @validateError="validateError"
+        @tabsChange="tabsChange"
+      >
+        <!-- tabs插槽 -->
+        <template #tab1>
+          <t-module-form
+            ref="sourceForm1"
+            :formOpts="formOpts"
+            :footer="null"
+            @handleEvent="handleEvent"
+          >
+            <template #wechat>
+              <div style="display:flex;">
+                <el-input v-model="formOpts.goodsInformation.opts.formData.wechat"></el-input>
+              </div>
+            </template>
+            <template #wechat1>
+              <div style="display:flex;">
+                <el-input v-model="formOpts.loadingDate.opts.formData.wechat1"></el-input>
+              </div>
+            </template>
+          </t-module-form>
+        </template>
+        <template #tab2>
+          <div>指派明细</div>
+        </template>
+        <template #tab3>
+          <div>承运明细</div>
+        </template>
+        <!-- 标题右侧按钮 -->
+        <template #extra>
+          <el-button type="primary">主要按钮</el-button>
+          <el-button type="success">成功按钮</el-button>
+          <el-button type="danger">信息按钮</el-button>
+        </template>
+        <!-- 表单自定义输入框插槽 -->
+        <template #wechat>
+          <div style="display:flex;">
+            <el-input v-model="formOpts.goodsInformation.opts.formData.wechat"></el-input>
+          </div>
+        </template>
+        <template #wechat1>
+          <div style="display:flex;">
+            <el-input v-model="formOpts.loadingDate.opts.formData.wechat1"></el-input>
+          </div>
+        </template>
+        <!-- 模块form表单插槽 -->
+        <template #freight>
+          <el-button type="danger">运费信息</el-button>
+          <el-button type="primary" @click="clearValidate">清除校验</el-button>
+        </template>
+        <template #lineMessage>
+          <el-button type="danger">线路信息</el-button>
+          <el-button type="primary" @click="resetForm">重置</el-button>
+        </template>
+      </t-module-form>
+    </t-layout-page-item>
+  </t-layout-page>
 </template>
 <script>
 export default {
   name: 'TModuleFormDemo',
-  data () {
+  data() {
     return {
       tabs: [
         {
@@ -269,14 +267,14 @@ export default {
       }
     }
   },
-  mounted () {
+  mounted() {
     // 默认选中tab2
     // this.$refs.sourceForm.setSelectedTab('tab2')
   },
   // 方法
   methods: {
     // 校验失败抛出事件
-    validateError (e) {
+    validateError(e) {
       for (let n in e) {
         this.$message.error(
           `${this.formOpts[n].title}存在错误,请检查输入是否正确`
@@ -284,21 +282,21 @@ export default {
       }
     },
     // tabs切换
-    tabsChange (val) {
+    tabsChange(val) {
       console.log('tabs切换', val.name)
     },
     // 重置表单
-    resetForm () {
+    resetForm() {
       console.log('重置表单')
       this.$refs.sourceForm.resetFormFields()
     },
     // 清除校验
-    clearValidate () {
+    clearValidate() {
       console.log('清除校验')
       this.$refs.sourceForm.clearValidate()
     },
     // 触发事件
-    handleEvent (type, val) {
+    handleEvent(type, val) {
       console.log(333333, type, val)
       switch (type) {
         case 'checkbox':
@@ -307,7 +305,7 @@ export default {
       }
     },
     // 提交form表单
-    submit (data) {
+    submit(data) {
       console.log('最终提交数据', data)
     }
   }

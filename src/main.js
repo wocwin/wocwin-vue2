@@ -4,7 +4,6 @@ import 'normalize.css/normalize.css' // a modern alternative to CSS resets
 import Element from 'element-ui'
 import '@/assets/styles/element-variables.scss'
 import '@/assets/styles/index.scss' // global css
-import '@/assets/font/fonts.scss'
 import App from './App'
 import store from './store'
 import permission from './directive/permission' // 按钮权限指令

@@ -1,17 +1,19 @@
 <template>
-  <div class="query-data">
-    <t-query-condition
-      ref="queryCondition"
-      :opts="opts"
-      isExpansion
-      :loading="loading"
-      @submit="conditionEnter"
-    >
-      <template #likeTransportNo="{param}">
-        <el-input v-model="param.likeTransportNo" clearable placeholder="自定义插槽输入框" />
-      </template>
-    </t-query-condition>
-  </div>
+  <t-layout-page>
+    <t-layout-page-item>
+      <t-query-condition
+        ref="queryCondition"
+        :opts="opts"
+        isExpansion
+        :loading="loading"
+        @submit="conditionEnter"
+      >
+        <template #likeTransportNo="{param}">
+          <el-input v-model="param.likeTransportNo" clearable placeholder="自定义插槽输入框" />
+        </template>
+      </t-query-condition>
+    </t-layout-page-item>
+  </t-layout-page>
 </template>
 <script>
 import moment from 'moment'

@@ -11,6 +11,7 @@ const TDialog = () => import('@/views/demo/TDialog')
 const TDetail = () => import('@/views/demo/TDetail')
 const TSelect = () => import('@/views/demo/TSelect')
 const TSelectTable = () => import('@/views/demo/TSelectTable')
+const TStepWizard = () => import('@/views/demo/TStepWizard')
 const IsShowFirstColumn = () => import('@/views/demo/TSelectTable/isShowFirstColumn.vue')
 const Multiple = () => import('@/views/demo/TSelectTable/multiple.vue')
 const MultiplePagination = () => import('@/views/demo/TSelectTable/showPagination.vue')
@@ -18,12 +19,13 @@ const RadioPagination = () => import('@/views/demo/TSelectTable/radioPagination.
 
 
 const commonRouter = {
-  path: '/',
+  path: '/common',
   component: Layout,
-  redirect: '/t-input',
+  redirect: '/common/t-input',
   name: '常用组件',
   meta: {
-    title: '常用组件'
+    title: '常用组件',
+    icon: 'job'
   },
   children: [
     {
@@ -49,6 +51,12 @@ const commonRouter = {
       name: '日期组件',
       component: TDatePicker,
       meta: { title: '日期组件' }
+    },
+    {
+      path: 't-step-wizard',
+      name: '步骤组件',
+      component: TStepWizard,
+      meta: { title: '步骤组件' }
     },
     {
       path: 't-dialog',

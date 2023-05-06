@@ -8,7 +8,11 @@ import redirect from '@/views/redirect.vue'
  * 静态模块路由
  */
 import commonRouter from './modules/common' // 常用组件
-import TTableRouter from './modules/TTable' // 常用组件
+import TTableRouter from './modules/TTable' // TTable组件
+import TFormRouter from './modules/TForm' // TForm组件
+import TQueryConditionRouter from './modules/TQuery' // 条件查询组件
+import mapRouter from './modules/map' // 地图路由
+import complexRouter from './modules/complex' // 组合组件路由
 
 
 
@@ -46,8 +50,12 @@ export const constantRoutes = window.__POWERED_BY_QIANKUN__ ?
         },
       ]
     },
+    mapRouter,
+    complexRouter,
     commonRouter,
-    TTableRouter
+    TTableRouter,
+    TFormRouter,
+    TQueryConditionRouter
   ] :
   [
     {
@@ -78,12 +86,16 @@ export const constantRoutes = window.__POWERED_BY_QIANKUN__ ?
         import('@/views/error/401'),
       hidden: true
     },
+    mapRouter,
+    complexRouter,
     commonRouter,
-    TTableRouter
+    TTableRouter,
+    TFormRouter,
+    TQueryConditionRouter
   ]
 
 const router = new Router({
-  base: '/app-vue2/',
+  base: '/wocwin-vue2//',
   routes: constantRoutes,
   mode: 'history'
 })

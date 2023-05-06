@@ -1,7 +1,6 @@
 /** TTable组件 路由 **/
 
 import Layout from '@/layout'
-import Blank from '@/components/Blank'
 /* 定义component */
 const Base = () => import('@/views/demo/TTable/base')
 const Copy = () => import('@/views/demo/TTable/copy')
@@ -35,7 +34,8 @@ const TTableRouter = {
   redirect: '/t-table/base',
   name: 'TTable组件',
   meta: {
-    title: 'TTable组件'
+    title: 'TTable组件',
+    icon: 'table'
   },
   children: [
     {

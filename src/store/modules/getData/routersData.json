@@ -6,7 +6,7 @@
     {
       "id": 581,
       "name": "Layout",
-      "path": "/app-vue2",
+      "path": "/wocwin-vue2/",
       "hidden": false,
       "redirect": null,
       "component": "Layout",
