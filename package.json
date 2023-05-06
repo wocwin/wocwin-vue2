@@ -1,13 +1,12 @@
 {
-  "name": "portal-fe",
+  "name": "wocwin-vue2",
   "version": "1.0.0",
-  "description": "vue2常规模板",
+  "description": "vue2后台管理系统模板",
   "author": "wocwin",
-  "base": "/base",
-  "menuId": 581,
   "scripts": {
     "serve": "vue-cli-service serve --mode dev",
-    "prod": "vue-cli-service build --mode prod"
+    "prod": "vue-cli-service build --mode prod",
+    "deploy": "deploy.sh"
   },
   "husky": {
     "hooks": {
@@ -23,6 +22,7 @@
   "keywords": [
     "vue",
     "element-ui",
+    "t-ui",
     "webpack",
     "admin-template",
     "qiankun"
@@ -30,13 +30,14 @@
   "dependencies": {
     "@babel/plugin-proposal-nullish-coalescing-operator": "^7.17.12",
     "@riophae/vue-treeselect": "0.4.0",
-    "@wocwin/t-ui": "^1.0.14",
+    "@wocwin/t-ui": "^1.0.17",
     "axios": "0.18.1",
     "bpmn-js": "^7.5.0",
     "bpmn-js-properties-panel": "^0.38.1",
     "clipboard": "2.0.4",
     "echarts": "4.2.1",
     "echarts-liquidfill": "^2.0.6",
+    "element-china-area-data": "^6.0.0",
     "element-ui": "2.15.6",
     "file-saver": "^2.0.1",
     "form-gen-parser": "^1.0.3",

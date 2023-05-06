@@ -18,7 +18,7 @@ const name = defaultTitle || '常规vue2模板' // 标题
 // 这里只列一部分，具体配置参考文档
 module.exports = {
   // 部署生产环境和开发环境下的URL。
-  publicPath: '/app-vue2',
+  publicPath: '/wocwin-vue2/',
   // 用于放置生成的静态资源 (js、css、img、fonts) 的；（项目打包之后，静态资源会放在这个文件夹下）
   assetsDir: 'static',
   // 是否开启eslint保存检测，有效值：ture | false | 'error'
