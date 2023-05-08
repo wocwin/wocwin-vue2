@@ -15,6 +15,7 @@
           style="width:100%;"
           placeholder="请选择省市区"
           filterable
+          :props="{ checkStrictly: true }"
           :options="regionData"
           v-model="selectedOptions"
         />
@@ -22,7 +23,7 @@
       <div class="input-item">
         <span class="input-item-text">店面覆盖范围</span>
         <el-input placeholder="请输入店面覆盖范围" clearable v-model="radius">
-          <template slot="append">米</template>
+          <template slot="append">公里</template>
         </el-input>
       </div>
       <div class="input-item">
@@ -30,15 +31,19 @@
         <el-checkbox style="width: 100%;" v-model="isShowCircle" @change="changeShowCircle">显示覆盖范围</el-checkbox>
       </div>
       <el-button type="primary" style="width: 100%;margin-bottom: 5px;" @click="handleQuery">选址测算</el-button>
-      <div class="concrete" v-if="addressList.length>0">
-        <label>具体店面地址</label>
-        <ul class="address_content">
-          <li
-            class="info t-oneline-overflow-hidden"
-            v-for="(item,index) in addressList"
-            :key="index"
-          >{{item}}</li>
-        </ul>
+      <div class="concrete" v-if="circles.length>0">
+        <el-collapse v-model="activeName">
+          <el-collapse-item title="具体店面地址" name="1">
+            <!-- <label>具体店面地址</label> -->
+            <ul class="address_content">
+              <li
+                class="info t-oneline-overflow-hidden"
+                v-for="(item,index) in circles"
+                :key="index"
+              >{{item.fullAddress}}</li>
+            </ul>
+          </el-collapse-item>
+        </el-collapse>
       </div>
     </div>
   </t-layout-page>
@@ -51,6 +56,7 @@ export default {
   data() {
     return {
       regionData,
+      activeName: '1',
       lnglat: '', // 经纬度
       selectedOptions: [],
       radius: null, // 半径
@@ -117,7 +123,7 @@ export default {
       this.map = new AMap.Map('container', {
         // resizeEnable: true,
         viewMode: '3D',
-        zoom: 11,
+        zoom: 12,
         center: [113.265862, 23.126124]
       });
       //使用CSS默认样式定义地图上的鼠标样式
@@ -162,7 +168,7 @@ export default {
       // console.log('区域码', this.selectedOptions)
       const params = {
         code: this.selectedOptions[this.selectedOptions.length - 1] - 0,
-        diameter: this.radius - 0,
+        diameter: (this.radius - 0) * 1000,
       }
       console.log('参数---', params)
       const res = await DataList
@@ -214,19 +220,16 @@ export default {
         let center = this.circles[i].center
         let marker = new AMap.Marker({
           position: center,
-          offset: new AMap.Pixel(0, 0),
+          offset: new AMap.Pixel(0, -9),
           anchor: 'center',
-          title: `详细地址：${this.circles[i].fullAddress}`,
-          zIndex: 102,
-          label: {
-            offset: new AMap.Pixel(0, 0),
-            content: `${i + 1}：地址：${this.circles[i].address}`,
-            direction: 'top'
-          }
+          title: `${this.circles[i].fullAddress}`,
+          zIndex: 102
+          // label: {
+          //   offset: new AMap.Pixel(0, 0),
+          //   content: `${i + 1}`,
+          //   direction: 'top'
+          // }
         })
-        marker.extData = {
-          index: i
-        }
         this.map.add(marker)
       }
     },
@@ -238,7 +241,7 @@ export default {
         let circle = new AMap.Circle({
           center: center,
           // radius: this.radius - 0,  // 半径
-          radius: (this.radius - 0) / 2,  // 半径
+          radius: (this.radius - 0) * 1000 / 2,  // 半径
           strokeColor: "#F33",  // 线颜色
           // strokeColor: this.rgb(),  // 线颜色
           zIndex: 101,
@@ -261,7 +264,7 @@ export default {
         let lnglat = this.circles[i].center
         let geocoder = new AMap.Geocoder({
           city: "020", //城市设为广州，默认：“全国”
-          radius: (this.radius - 0) / 2, //范围，默认：500
+          radius: (this.radius - 0) * 1000 / 2, //范围，默认：500
           // extensions: 'all'
         });
         geocoder.getAddress(lnglat, (status, result) => {
@@ -305,6 +308,10 @@ export default {
       }
     }
     .concrete {
+      ::v-deep.el-collapse-item__header {
+        font-size: 16px;
+        font-weight: bold;
+      }
       ul,
       li {
         list-style: none;
@@ -313,8 +320,8 @@ export default {
       }
       .address_content {
         font-size: 12px;
+        max-height: 210px;
         overflow-y: auto;
-        height: 250px;
         .info {
           line-height: 25px;
         }
