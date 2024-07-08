@@ -28,7 +28,7 @@ router.beforeEach((to, from, next) => {
 				})
 			})
 		} else {
-      let add_routes = store.getters.permission_sysMenu
+			let add_routes = store.getters.permission_sysMenu
 			//如果是微应用则延迟渲染避免与主应用拦截器冲突
 			if (!window.__POWERED_BY_QIANKUN__) {
 				// setTimeout(next, 100)
@@ -44,14 +44,15 @@ router.beforeEach((to, from, next) => {
 					NProgress.done()
 				}
 			} else {
-				console.log('主项目的next', to, store.getters.permission_sysMenu)
-				if (to.path === '/index' || to.path === '/') {
+				// console.log('主项目的next', to, store.getters.permission_sysMenu)
+				// next()
+				if (to.path === '/index' || to.path == '/') {
 					let lastChild = add_routes[0]?.children[0]
 					if (to.path === lastChild.path) return false
 					next(lastChild)
 					NProgress.done()
 				} else {
-					console.log('主项目的next')
+					// console.log('主项目的===非/index的next', to, add_routes)
 					next()
 					NProgress.done()
 				}

@@ -32,7 +32,7 @@ export default {
 	methods: {
 		goHome() {
 			if (!window.__POWERED_BY_QIANKUN__) {
-				window.location.href = '/wocwin-qiankun/'
+				window.location.href = window.localStorage.getItem("mainJumpPublicPath")
 			} else {
 				this.$router.push({ path: '/' })
 			}

@@ -62,7 +62,7 @@ export default {
               if (!window.__POWERED_BY_QIANKUN__) {
                 location.reload()
               } else {
-                window.location.href = '/wocwin-qiankun/'
+                window.location.href = window.localStorage.getItem("mainJumpPublicPath")
               }
             })
           } else {

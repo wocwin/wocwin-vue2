@@ -144,7 +144,8 @@ function filterAsyncRouter(asyncRouterMap, hier, systemIndex, moduleIndex) {
 				visible: route.visible,
 				systemIndex: [hier === 1 ? index : systemIndex, hier === 2 ? index : moduleIndex]
 			},
-			component: route.component
+			component: route.component,
+			query: { type: 1 }
 		})
 		return acc
 	}, [])
