@@ -43,8 +43,10 @@ const permission = {
 				let res = await getRouterPrefix(state.menuId)
 				if (res.success) {
 					commit("SET_PARENT_PATH", res.data)
+					// console.log('当前登录人', window.localStorage.getItem("login_Name"))
+					const useApi = window.localStorage.getItem("login_Name") === "user" ? getUserRouters() : getRouters();
 					// 获取路由数据
-					const routerRes = await getRouters(state.menuId)
+					const routerRes = await useApi
 					rebuildRouter(routerRes?.data)
 					let newRouter = filterAsyncRouter(routerRes.data && routerRes?.data[0].children, 1)
 					// console.log('走了嘛生成系统路由', newRouter)

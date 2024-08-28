@@ -1,5 +1,5 @@
 import { getToken, setToken, removeToken } from '@/utils/auth'
-import { login, getInfo, logout, getPermBtm } from "@/api/modules/login";
+import { login, getInfo, logout, getPermBtm, getUserPermBtm } from "@/api/modules/login";
 const user = {
 	state: {
 		token: getToken(),
@@ -54,8 +54,9 @@ const user = {
 				login(userInfo)
 					.then((res) => {
 						if (res.success) {
-							setToken(res.data)
-							commit('SET_TOKEN', res.data)
+							setToken(res.data.token)
+							window.localStorage.setItem('login_Name', res.data.loginName)
+							commit('SET_TOKEN', res.data.token)
 						}
 						resolve(res)
 					})
@@ -83,8 +84,9 @@ const user = {
 							commit('SET_NICK_NAME', user.nickName)
 							commit('SET_USER_ID', user.userId)
 							commit('SET_DEPT', user.dept)
+							const useApi = window.localStorage.getItem("login_Name") === "user" ? getUserPermBtm() : getPermBtm()
 							// 获取按钮权限
-							const btmRes = await getPermBtm()
+							const btmRes = await useApi
 							// console.log('获取的按钮权限', btmRes)
 							if (btmRes.success && btmRes.data.length > 0) {
 								const permBtn = btmRes.data.map((item) => item.menuId)
@@ -109,6 +111,7 @@ const user = {
 					commit('SET_ROLES', [])
 					commit('SET_PERMISSIONS', [])
 					removeToken()
+					localStorage.removeItem('login_Name')
 					resolve()
 				}).catch(error => {
 					reject(error)
@@ -119,6 +122,7 @@ const user = {
 		FedLogOut({ commit }) {
 			return new Promise(resolve => {
 				commit('SET_TOKEN', '')
+				localStorage.removeItem('login_Name')
 				removeToken()
 				resolve()
 			})

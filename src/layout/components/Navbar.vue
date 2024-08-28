@@ -1,6 +1,11 @@
 <template>
 	<div class="navbar">
-		<hamburger id="hamburger-container" :is-active="sidebar.opened" class="hamburger-container" @toggleClick="toggleSideBar" />
+		<hamburger
+			id="hamburger-container"
+			:is-active="sidebar.opened"
+			class="hamburger-container"
+			@toggleClick="toggleSideBar"
+		/>
 		<breadcrumb id="breadcrumb-container" class="breadcrumb-container" />
 		<div class="right-menu">
 			<template v-if="device !== 'mobile'">
@@ -8,7 +13,7 @@
 			</template>
 			<el-dropdown class="avatar-container right-menu-item hover-effect" trigger="click">
 				<div class="avatar-wrapper">
-					{{ nickName || 'wocwin' }}
+					{{ loginName || 'wocwin' }}
 					<i class="el-icon-caret-bottom" />
 				</div>
 				<el-dropdown-menu slot="dropdown">
@@ -41,53 +46,55 @@ import Screenfull from './Screenfull'
 import ResetPwd from './ResetPwd'
 
 export default {
-	data() {
-		return {
-			dialogVisible: false,
-			user: {}
-		}
-	},
-	components: {
-		Breadcrumb,
-		Hamburger,
-		Screenfull,
-		ResetPwd
-	},
-	computed: {
-		...mapGetters(['sidebar', 'avatar', 'device', 'nickName']),
-
-		setting: {
-			get() {
-				return this.$store.state.settings.showSettings
-			},
-			set(val) {
-				this.$store.dispatch('settings/changeSetting', {
-					key: 'showSettings',
-					value: val
-				})
-			}
-		}
-	},
-	methods: {
-		toggleSideBar() {
-			this.$store.dispatch('app/toggleSideBar')
-		},
-		handleClose() {
-			this.dialogVisible = false
-			this.$refs.resetPwd.initData()
-		},
-		async logout() {
-			this.$confirm('确定注销并退出系统吗？', '提示', {
-				confirmButtonText: '确定',
-				cancelButtonText: '取消',
-				type: 'warning'
-			}).then(() => {
-				this.$store.dispatch('FedLogOut').then(() => {
-					window.location.href = window.__POWERED_BY_QIANKUN__ ? window.localStorage.getItem("mainJumpPublicPath") : '/wocwin-vue2/'
-				})
-			})
-		}
-	}
+  data() {
+    return {
+      dialogVisible: false,
+      user: {}
+    }
+  },
+  components: {
+    Breadcrumb,
+    Hamburger,
+    Screenfull,
+    ResetPwd
+  },
+  computed: {
+    ...mapGetters(['sidebar', 'avatar', 'device']),
+    loginName() {
+      return localStorage.getItem("login_Name")
+    },
+    setting: {
+      get() {
+        return this.$store.state.settings.showSettings
+      },
+      set(val) {
+        this.$store.dispatch('settings/changeSetting', {
+          key: 'showSettings',
+          value: val
+        })
+      }
+    }
+  },
+  methods: {
+    toggleSideBar() {
+      this.$store.dispatch('app/toggleSideBar')
+    },
+    handleClose() {
+      this.dialogVisible = false
+      this.$refs.resetPwd.initData()
+    },
+    async logout() {
+      this.$confirm('确定注销并退出系统吗？', '提示', {
+        confirmButtonText: '确定',
+        cancelButtonText: '取消',
+        type: 'warning'
+      }).then(() => {
+        this.$store.dispatch('FedLogOut').then(() => {
+          window.location.href = window.__POWERED_BY_QIANKUN__ ? window.localStorage.getItem("mainJumpPublicPath") : '/wocwin-vue2/'
+        })
+      })
+    }
+  }
 }
 </script>
 
