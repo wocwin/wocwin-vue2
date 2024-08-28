@@ -12,7 +12,8 @@ import Tui from '@wocwin/t-ui'
 import * as filters from './utils/filters' // 全局过滤
 import './assets/icons' // icon
 import './permission' // 全局路由守卫
-import { FloatAdd, FloatSub, FloatMul, FloatDiv, download } from '@/utils' // 浮点运算加减乘除
+import { FloatAdd, FloatSub, FloatMul, FloatDiv, download, handleTree } from '@/utils' // 浮点运算加减乘除
+import TTabs from '@/components/TTabs.vue' // 浮点运算加减乘除
 import { message } from '@/utils/resetMessage' // 防止重复点击重复弹出message弹框
 import VueClipboard from 'vue-clipboard2' // 复制插件
 import router from './router'
@@ -23,11 +24,13 @@ import print from 'vue-print-nb'
 Vue.use(Tui) // 引入Tui组件
 Vue.use(print) //注册打印插件
 Vue.use(VueClipboard)
+Vue.component('TTabs', TTabs)
 // 全局方法挂载
 Vue.prototype.FloatAdd = FloatAdd //  浮点运算加
 Vue.prototype.FloatSub = FloatSub //  浮点运算减
 Vue.prototype.FloatMul = FloatMul //  浮点运算乘
 Vue.prototype.FloatDiv = FloatDiv //  浮点运算除
+Vue.prototype.handleTree = handleTree // 树形数据处理
 Vue.prototype.moment = moment
 Vue.prototype.$messageUpload = message // 防止重复点击重复弹出message弹框
 Vue.prototype.download = download // 导出
