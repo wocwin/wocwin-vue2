@@ -1,0 +1,34 @@
+.largeScreen_page{
+    .container{
+            //煅烧车间动画
+        .arrow_roasting_one:nth-child(n), .arrow_roasting_two_one:nth-child(n) {
+            animation: roastingOneMove 6s infinite;
+            animation-timing-function: linear;
+            animation-direction: normal;
+        }
+        .arrow_roasting_dou:nth-child(n), .arrow_roasting_two_dou:nth-child(n) {
+            animation: roastingDouMove 6s infinite;
+            animation-timing-function: linear;
+            animation-direction: normal;
+        }
+        @keyframes roastingOneMove {
+            0% { left: calc(460% + 55.05rem); top: 2rem; transform: rotate(225deg);opacity:0 }  
+            5% { left: calc(460% + 55.05rem); top: 2.1rem; transform: rotate(225deg);opacity:1 }  
+            35% { left: calc(460% + 55.05rem); top: 4.1rem; transform: rotate(225deg);opacity:1 }  
+            40% { left: calc(460% + 55.05rem); top: 4.2rem; transform: rotate(225deg);opacity:0 }  
+            100% { left: calc(460% + 55.05rem); top: 4.4rem; transform: rotate(225deg);opacity:0 } 
+        }
+        @keyframes roastingDouMove {
+            0% { left: calc(460% + 58.58rem); top: 2rem; transform: rotate(225deg);opacity:0 }  
+            5% { left: calc(460% + 58.58rem); top: 2.1rem; transform: rotate(225deg);opacity:1 }  
+            8% { left: calc(460% + 58.58rem); top: 2.25rem; transform: rotate(225deg);opacity:0 }  
+            10% { left: calc(460% + 58.58rem); top: 2.42rem; transform: rotate(315deg);opacity:0 }  
+            15% { left: calc(460% + 58.3rem); top: 2.42rem; transform: rotate(315deg);opacity:1 }  
+            60% { left: calc(460% + 55.05rem); top: 2.42rem; transform: rotate(315deg);opacity:1 }  
+            65% { left: calc(460% + 55.05rem); top: 2.42rem; transform: rotate(225deg);opacity:1 }  
+            90% { left: calc(460% + 55.05rem); top: 4.1rem; transform: rotate(225deg);opacity:1 }  
+            95% { left: calc(460% + 55.05rem); top: 4.2rem; transform: rotate(225deg);opacity:0 }  
+            100% { left: calc(460% + 55.05rem); top: 4.4rem; transform: rotate(225deg);opacity:0 } 
+        }
+    }
+}

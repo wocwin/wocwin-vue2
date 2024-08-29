@@ -1,0 +1,74 @@
+{
+  "success": true,
+  "code": 200,
+  "msg": "成功",
+  "data": {
+    "pageSize": 5,
+    "pages": 5,
+    "total": 22,
+    "pageNum": 1,
+    "sortNum": null,
+    "records": [
+      {
+        "code": "TSDR-Z-ZN-15",
+        "time": "2022-09-30",
+        "createName": "黄明",
+        "id": 316,
+        "status": "打印中",
+        "batchMaterialName": "甲基萘油批次物料",
+        "spec": "规格-新增2",
+        "productCode": "ZN",
+        "place": "中国",
+        "bagNum": 50
+      },
+      {
+        "code": "TSDR-Z-QY-26",
+        "time": "2022-08-05",
+        "createName": "小黄同学",
+        "id": 307,
+        "status": "出库中",
+        "batchMaterialName": "轻油01",
+        "spec": "2.5",
+        "productCode": "QY",
+        "place": "预处理一部",
+        "bagNum": 4
+      },
+      {
+        "code": "TSDR-Z-QY-22",
+        "time": "2022-08-05",
+        "createName": "黄明",
+        "id": 303,
+        "status": "出库中",
+        "batchMaterialName": "轻油01",
+        "spec": "2.5",
+        "productCode": "QY",
+        "place": "预处理一部",
+        "bagNum": 15
+      },
+      {
+        "code": "TSDR-Z-QY-21",
+        "time": "2022-08-05",
+        "createName": "黄明",
+        "id": 302,
+        "status": "出库中",
+        "batchMaterialName": "轻油01",
+        "spec": "2.5",
+        "productCode": "QY",
+        "place": "预处理一部",
+        "bagNum": 5
+      },
+      {
+        "code": "TSDR-Z-FY-8塔",
+        "time": "2022-08-05",
+        "createName": "黄明",
+        "id": 301,
+        "status": "出库中",
+        "batchMaterialName": "酚油01",
+        "spec": "规格-修改3",
+        "productCode": "FY",
+        "place": "酚油一部",
+        "bagNum": 5
+      }
+    ]
+  }
+}

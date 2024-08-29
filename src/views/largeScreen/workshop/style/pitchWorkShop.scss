@@ -1,0 +1,494 @@
+.largeScreen_page{
+    .container{
+        //改质沥青车间动画
+          .arrow_pitch_1:nth-child(n), .arrow_pitch_two_1:nth-child(n) {
+            animation: jiareluOneMove 30s infinite;
+            animation-timing-function: linear;
+            animation-direction: normal;
+          }
+          .arrow_pitch_2:nth-child(n), .arrow_pitch_two_2:nth-child(n) {
+            animation: fanyingqiDouMove 30s infinite;
+            animation-timing-function: linear;
+            animation-direction: normal;
+          }    
+          .arrow_pitch_3:nth-child(n), .arrow_pitch_two_3:nth-child(n) {
+            animation: shanzhengcaoThreeMove 30s infinite;
+            animation-timing-function: linear;
+            animation-direction: normal;
+          }  
+          .arrow_pitch_4:nth-child(n), .arrow_pitch_two_4:nth-child(n) {
+            animation: shanzengyouOneMove 30s infinite;
+            animation-timing-function: linear;
+            animation-direction: normal;
+          }  
+          .arrow_pitch_5:nth-child(n), .arrow_pitch_two_5:nth-child(n) {
+            animation: jinzhiDouMove 30s infinite;
+            animation-timing-function: linear;
+            animation-direction: normal;
+          }  
+          .arrow_pitch_6:nth-child(n), .arrow_pitch_two_6:nth-child(n) {
+            animation: zhanjiejiThreeMove 30s infinite;
+            animation-timing-function: linear;
+            animation-direction: normal;
+          }  
+          .arrow_pitch_7:nth-child(n), .arrow_pitch_two_7:nth-child(n) {
+            animation: gaizhiliqingOneMove 30s infinite;
+            animation-timing-function: linear;
+            animation-direction: normal;
+          }  
+          .arrow_pitch_8:nth-child(n), .arrow_pitch_two_8:nth-child(n) {
+            animation: jiareluDouMove 30s infinite;
+            animation-timing-function: linear;
+            animation-direction: normal;
+          }  
+          .arrow_pitch_9:nth-child(n), .arrow_pitch_two_9:nth-child(n) {
+            animation: fanyingqiThreeMove 30s infinite;
+            animation-timing-function: linear;
+            animation-direction: normal;
+          }  
+          .arrow_pitch_10:nth-child(n), .arrow_pitch_two_10:nth-child(n) {
+            animation: shanzhengcaoOneMove 30s infinite;
+            animation-timing-function: linear;
+            animation-direction: normal;
+          }  
+          .arrow_pitch_11:nth-child(n), .arrow_pitch_two_11:nth-child(n) {
+            animation: shanzengyouDouMove 30s infinite;
+            animation-timing-function: linear;
+            animation-direction: normal;
+          }  
+          .arrow_pitch_12:nth-child(n), .arrow_pitch_12:nth-child(n) {
+            animation: jinzhiThreeMove 30s infinite;
+            animation-timing-function: linear;
+            animation-direction: normal;
+          }  
+          .arrow_pitch_13:nth-child(n), .arrow_pitch_two_13:nth-child(n) {
+            animation: zhanjiejiOneMove 30s infinite;
+            animation-timing-function: linear;
+            animation-direction: normal;
+          }  
+          .arrow_pitch_14:nth-child(n), .arrow_pitch_two_14:nth-child(n) {
+            animation: gaizhiliqingDouMove 30s infinite;
+            animation-timing-function: linear;
+            animation-direction: normal;
+          }
+          .arrow_pitch_15:nth-child(n), .arrow_pitch_two_15:nth-child(n) {
+            animation: jiareluThreeMove 30s infinite;
+            animation-timing-function: linear;
+            animation-direction: normal;
+          }
+          .arrow_pitch_16:nth-child(n), .arrow_pitch_two_16:nth-child(n) {
+            animation: fanyingqiOneMove 30s infinite;
+            animation-timing-function: linear;
+            animation-direction: normal;
+          }
+          .arrow_pitch_17:nth-child(n), .arrow_pitch_two_17:nth-child(n) {
+            animation: shanzhengcaoDouMove 30s infinite;
+            animation-timing-function: linear;
+            animation-direction: normal;
+          }
+          .arrow_pitch_18:nth-child(n), .arrow_pitch_two_18:nth-child(n) {
+            animation: shanzengyouThreeMove 30s infinite;
+            animation-timing-function: linear;
+            animation-direction: normal;
+          }
+          .arrow_pitch_19:nth-child(n), .arrow_pitch_two_19:nth-child(n) {
+            animation: jinzhiOneMove 30s infinite;
+            animation-timing-function: linear;
+            animation-direction: normal;
+          }
+          .arrow_pitch_20:nth-child(n), .arrow_pitch_two_20:nth-child(n) {
+            animation: zhanjiejiDouMove 30s infinite;
+            animation-timing-function: linear;
+            animation-direction: normal;
+          }
+          .arrow_pitch_21:nth-child(n), .arrow_pitch_two_21:nth-child(n) {
+            animation: gaizhiliqingThreeMove 30s infinite;
+            animation-timing-function: linear;
+            animation-direction: normal;
+          }
+
+          @keyframes jiareluOneMove {
+            0% { left: calc(360% + .8rem); top: 8.12rem; transform: rotate(-45deg);opacity:0 }  
+            1% { left: calc(360% + .7rem); top: 8.12rem; transform: rotate(-45deg);opacity:1 }  
+            3% { left: calc(360% + .2rem); top: 8.12rem; transform: rotate(-45deg);opacity:1 }  
+            4% { left: calc(360% + .17rem); top: 8.12rem; transform: rotate(-45deg);opacity:0 }  
+            5% { left: calc(360% - .17rem); top: 7.9rem; transform: rotate(45deg);opacity:0 }  
+            6% { left: calc(360% - .17rem); top: 7.85rem; transform: rotate(45deg);opacity:1 }  
+            24% { left: calc(360% - .17rem); top: .9rem; transform: rotate(45deg);opacity:1 }  
+            25% { left: calc(360% - .17rem); top: .8rem; transform: rotate(45deg);opacity:0 }  
+            26% { left: calc(360% + .1rem); top: .56rem; transform: rotate(135deg);opacity:0 }  
+            27% { left: calc(360% + .2rem); top: .56rem; transform: rotate(135deg);opacity:1 }  
+            39% { left: calc(360% + 5.74rem); top: .56rem; transform: rotate(135deg);opacity:1 }  
+            40% { left: calc(360% + 5.74rem); top: .56rem; transform: rotate(225deg);opacity:1 } 
+            42% { left: calc(360% + 5.74rem); top: 1.3rem; transform: rotate(225deg);opacity:1 }
+            43% { left: calc(360% + 5.74rem); top: 1.4rem; transform: rotate(225deg);opacity:0 }
+            100% { left: calc(360% + 5.74rem); top: 1.6rem; transform: rotate(225deg);opacity:0 }
+          } 
+          @keyframes jiareluDouMove {
+            0% { left: calc(360% + .8rem); top: 5.32rem; transform: rotate(-45deg);opacity:0 }  
+            1% { left: calc(360% + .7rem); top: 5.32rem; transform: rotate(-45deg);opacity:1 }  
+            4% { left: calc(360% - .15rem); top: 5.32rem; transform: rotate(-45deg);opacity:1 }  
+            5% { left: calc(360% - .17rem); top: 5.32rem; transform: rotate(45deg);opacity:1 }  
+            16.5% { left: calc(360% - .17rem); top: .9rem; transform: rotate(45deg);opacity:1 }  
+            17.5% { left: calc(360% - .17rem); top: .8rem; transform: rotate(45deg);opacity:0 }  
+            18.5% { left: calc(360% + .1rem); top: .56rem; transform: rotate(135deg);opacity:0 }  
+            19.5% { left: calc(360% + .2rem); top: .56rem; transform: rotate(135deg);opacity:1 }  
+            31.5% { left: calc(360% + 5.74rem); top: .56rem; transform: rotate(135deg);opacity:1 }  
+            32.5% { left: calc(360% + 5.74rem); top: .56rem; transform: rotate(225deg);opacity:1 } 
+            34.5% { left: calc(360% + 5.74rem); top: 1.3rem; transform: rotate(225deg);opacity:1 }
+            35.5% { left: calc(360% + 5.74rem); top: 1.4rem; transform: rotate(225deg);opacity:0 }
+            100% { left: calc(360% + 5.74rem); top: 1.6rem; transform: rotate(225deg);opacity:0 }
+          }
+          @keyframes jiareluThreeMove {
+            0% { left: calc(360% + .8rem); top: 2.52rem; transform: rotate(-45deg);opacity:0 }  
+            1% { left: calc(360% + .7rem); top: 2.52rem; transform: rotate(-45deg);opacity:1 }  
+            4% { left: calc(360% - .15rem); top: 2.52rem; transform: rotate(-45deg);opacity:1 }  
+            5% { left: calc(360% - .17rem); top: 2.52rem; transform: rotate(45deg);opacity:1 }  
+            9% { left: calc(360% - .17rem); top: .9rem; transform: rotate(45deg);opacity:1 }  
+            10% { left: calc(360% - .17rem); top: .8rem; transform: rotate(45deg);opacity:0 }  
+            11% { left: calc(360% + .1rem); top: .56rem; transform: rotate(135deg);opacity:0 }  
+            12% { left: calc(360% + .2rem); top: .56rem; transform: rotate(135deg);opacity:1 }  
+            24% { left: calc(360% + 5.74rem); top: .56rem; transform: rotate(135deg);opacity:1 }  
+            25% { left: calc(360% + 5.74rem); top: .56rem; transform: rotate(225deg);opacity:1 } 
+            27% { left: calc(360% + 5.74rem); top: 1.3rem; transform: rotate(225deg);opacity:1 }
+            28% { left: calc(360% + 5.74rem); top: 1.4rem; transform: rotate(225deg);opacity:0 }
+            100% { left: calc(360% + 5.74rem); top: 1.6rem; transform: rotate(225deg);opacity:0 }
+          }   
+
+          @keyframes fanyingqiOneMove {
+            0% { left: calc(360% + .8rem); top: 8.12rem; transform: rotate(-45deg);opacity:0 }  
+            1% { left: calc(360% + .7rem); top: 8.12rem; transform: rotate(-45deg);opacity:1 }  
+            3% { left: calc(360% + .2rem); top: 8.12rem; transform: rotate(-45deg);opacity:1 }  
+            4% { left: calc(360% + .17rem); top: 8.12rem; transform: rotate(-45deg);opacity:0 }  
+            5% { left: calc(360% - .17rem); top: 7.9rem; transform: rotate(45deg);opacity:0 }  
+            6% { left: calc(360% - .17rem); top: 7.85rem; transform: rotate(45deg);opacity:1 }  
+            24% { left: calc(360% - .17rem); top: .9rem; transform: rotate(45deg);opacity:1 }  
+            25% { left: calc(360% - .17rem); top: .8rem; transform: rotate(45deg);opacity:0 }  
+            26% { left: calc(360% + .1rem); top: .56rem; transform: rotate(135deg);opacity:0 }  
+            27% { left: calc(360% + .2rem); top: .56rem; transform: rotate(135deg);opacity:1 }  
+            47% { left: calc(360% + 9.85rem); top: .56rem; transform: rotate(135deg);opacity:1 }  
+            48% { left: calc(360% + 9.85rem); top: .56rem; transform: rotate(225deg);opacity:1 } 
+            50% { left: calc(360% + 9.85rem); top: 1.3rem; transform: rotate(225deg);opacity:1 }
+            51% { left: calc(360% + 9.85rem); top: 1.4rem; transform: rotate(225deg);opacity:0 }
+            100% { left: calc(360% + 9.85rem); top: 1.6rem; transform: rotate(225deg);opacity:0 }
+          }  
+          @keyframes fanyingqiDouMove {
+            0% { left: calc(360% + .8rem); top: 5.32rem; transform: rotate(-45deg);opacity:0 }  
+            1% { left: calc(360% + .7rem); top: 5.32rem; transform: rotate(-45deg);opacity:1 }  
+            4% { left: calc(360% - .15rem); top: 5.32rem; transform: rotate(-45deg);opacity:1 }  
+            5% { left: calc(360% - .17rem); top: 5.32rem; transform: rotate(45deg);opacity:1 }  
+            16.5% { left: calc(360% - .17rem); top: .9rem; transform: rotate(45deg);opacity:1 }  
+            17.5% { left: calc(360% - .17rem); top: .8rem; transform: rotate(45deg);opacity:0 }  
+            18.5% { left: calc(360% + .1rem); top: .56rem; transform: rotate(135deg);opacity:0 }  
+            19.5% { left: calc(360% + .2rem); top: .56rem; transform: rotate(135deg);opacity:1 }  
+            39.5% { left: calc(360% + 9.85rem); top: .56rem; transform: rotate(135deg);opacity:1 }  
+            40.5% { left: calc(360% + 9.85rem); top: .56rem; transform: rotate(225deg);opacity:1 } 
+            42.5% { left: calc(360% + 9.85rem); top: 1.3rem; transform: rotate(225deg);opacity:1 }
+            43.5% { left: calc(360% + 9.85rem); top: 1.4rem; transform: rotate(225deg);opacity:0 }
+            100% { left: calc(360% + 9.85rem); top: 1.6rem; transform: rotate(225deg);opacity:0 }
+          }
+          @keyframes fanyingqiThreeMove {
+            0% { left: calc(360% + .8rem); top: 2.52rem; transform: rotate(-45deg);opacity:0 }  
+            1% { left: calc(360% + .7rem); top: 2.52rem; transform: rotate(-45deg);opacity:1 }  
+            4% { left: calc(360% - .15rem); top: 2.52rem; transform: rotate(-45deg);opacity:1 }  
+            5% { left: calc(360% - .17rem); top: 2.52rem; transform: rotate(45deg);opacity:1 }  
+            9% { left: calc(360% - .17rem); top: .9rem; transform: rotate(45deg);opacity:1 }  
+            10% { left: calc(360% - .17rem); top: .8rem; transform: rotate(45deg);opacity:0 }  
+            11% { left: calc(360% + .1rem); top: .56rem; transform: rotate(135deg);opacity:0 }  
+            12% { left: calc(360% + .2rem); top: .56rem; transform: rotate(135deg);opacity:1 }  
+            32% { left: calc(360% + 9.85rem); top: .56rem; transform: rotate(135deg);opacity:1 }  
+            33% { left: calc(360% + 9.85rem); top: .56rem; transform: rotate(225deg);opacity:1 } 
+            35% { left: calc(360% + 9.85rem); top: 1.3rem; transform: rotate(225deg);opacity:1 }
+            36% { left: calc(360% + 9.85rem); top: 1.4rem; transform: rotate(225deg);opacity:0 }
+            100% { left: calc(360% + 9.85rem); top: 1.6rem; transform: rotate(225deg);opacity:0 }
+          }
+
+          @keyframes shanzhengcaoOneMove {
+            0% { left: calc(360% + .8rem); top: 8.12rem; transform: rotate(-45deg);opacity:0 }  
+            1% { left: calc(360% + .7rem); top: 8.12rem; transform: rotate(-45deg);opacity:1 }  
+            3% { left: calc(360% + .2rem); top: 8.12rem; transform: rotate(-45deg);opacity:1 }  
+            4% { left: calc(360% + .17rem); top: 8.12rem; transform: rotate(-45deg);opacity:0 }  
+            5% { left: calc(360% - .17rem); top: 7.9rem; transform: rotate(45deg);opacity:0 }  
+            6% { left: calc(360% - .17rem); top: 7.85rem; transform: rotate(45deg);opacity:1 }  
+            24% { left: calc(360% - .17rem); top: .9rem; transform: rotate(45deg);opacity:1 }  
+            25% { left: calc(360% - .17rem); top: .8rem; transform: rotate(45deg);opacity:0 }  
+            26% { left: calc(360% + .1rem); top: .56rem; transform: rotate(135deg);opacity:0 }  
+            27% { left: calc(360% + .2rem); top: .56rem; transform: rotate(135deg);opacity:1 }  
+            58% { left: calc(360% + 15.3rem); top: .56rem; transform: rotate(135deg);opacity:1 }  
+            59% { left: calc(360% + 15.4rem); top: .56rem; transform: rotate(135deg);opacity:0 } 
+            60% { left: calc(360% + 15.66rem); top: .8rem; transform: rotate(225deg);opacity:0 } 
+            61% { left: calc(360% + 15.66rem); top: .86rem; transform: rotate(225deg);opacity:1 }
+            63% { left: calc(360% + 15.66rem); top: 1.3rem; transform: rotate(225deg);opacity:1 }
+            64% { left: calc(360% + 15.66rem); top: 1.4rem; transform: rotate(225deg);opacity:0 }
+            100% { left: calc(360% + 15.66rem); top: 1.6rem; transform: rotate(225deg);opacity:0 }
+          }
+          @keyframes shanzhengcaoDouMove {
+            0% { left: calc(360% + .8rem); top: 5.32rem; transform: rotate(-45deg);opacity:0 }  
+            1% { left: calc(360% + .7rem); top: 5.32rem; transform: rotate(-45deg);opacity:1 }  
+            4% { left: calc(360% - .15rem); top: 5.32rem; transform: rotate(-45deg);opacity:1 }  
+            5% { left: calc(360% - .17rem); top: 5.32rem; transform: rotate(45deg);opacity:1 }  
+            16.5% { left: calc(360% - .17rem); top: .9rem; transform: rotate(45deg);opacity:1 }  
+            17.5% { left: calc(360% - .17rem); top: .8rem; transform: rotate(45deg);opacity:0 }  
+            18.5% { left: calc(360% + .1rem); top: .56rem; transform: rotate(135deg);opacity:0 }  
+            19.5% { left: calc(360% + .2rem); top: .56rem; transform: rotate(135deg);opacity:1 }  
+            50.5% { left: calc(360% + 15.3rem); top: .56rem; transform: rotate(135deg);opacity:1 }  
+            51.5% { left: calc(360% + 15.4rem); top: .56rem; transform: rotate(135deg);opacity:0 } 
+            52.5% { left: calc(360% + 15.66rem); top: .8rem; transform: rotate(225deg);opacity:0 } 
+            53.5% { left: calc(360% + 15.66rem); top: .86rem; transform: rotate(225deg);opacity:1 }
+            55.5% { left: calc(360% + 15.66rem); top: 1.3rem; transform: rotate(225deg);opacity:1 }
+            56.5% { left: calc(360% + 15.66rem); top: 1.4rem; transform: rotate(225deg);opacity:0 }
+            100% { left: calc(360% + 15.66rem); top: 1.6rem; transform: rotate(225deg);opacity:0 }
+          }
+          @keyframes shanzhengcaoThreeMove {
+            0% { left: calc(360% + .8rem); top: 2.52rem; transform: rotate(-45deg);opacity:0 }  
+            1% { left: calc(360% + .7rem); top: 2.52rem; transform: rotate(-45deg);opacity:1 }  
+            4% { left: calc(360% - .15rem); top: 2.52rem; transform: rotate(-45deg);opacity:1 }  
+            5% { left: calc(360% - .17rem); top: 2.52rem; transform: rotate(45deg);opacity:1 }  
+            9% { left: calc(360% - .17rem); top: .9rem; transform: rotate(45deg);opacity:1 }  
+            10% { left: calc(360% - .17rem); top: .8rem; transform: rotate(45deg);opacity:0 }  
+            11% { left: calc(360% + .1rem); top: .56rem; transform: rotate(135deg);opacity:0 }  
+            12% { left: calc(360% + .2rem); top: .56rem; transform: rotate(135deg);opacity:1 }  
+            43% { left: calc(360% + 15.3rem); top: .56rem; transform: rotate(135deg);opacity:1 }  
+            44% { left: calc(360% + 15.4rem); top: .56rem; transform: rotate(135deg);opacity:0 } 
+            45% { left: calc(360% + 15.66rem); top: .8rem; transform: rotate(225deg);opacity:0 } 
+            46% { left: calc(360% + 15.66rem); top: .86rem; transform: rotate(225deg);opacity:1 }
+            48% { left: calc(360% + 15.66rem); top: 1.3rem; transform: rotate(225deg);opacity:1 }
+            49% { left: calc(360% + 15.66rem); top: 1.4rem; transform: rotate(225deg);opacity:0 }
+            100% { left: calc(360% + 15.66rem); top: 1.6rem; transform: rotate(225deg);opacity:0 }
+          }
+
+          @keyframes shanzengyouOneMove {
+            0% { left: calc(360% + .8rem); top: 8.12rem; transform: rotate(-45deg);opacity:0 }  
+            1% { left: calc(360% + .7rem); top: 8.12rem; transform: rotate(-45deg);opacity:1 }  
+            3% { left: calc(360% + .2rem); top: 8.12rem; transform: rotate(-45deg);opacity:1 }  
+            4% { left: calc(360% + .17rem); top: 8.12rem; transform: rotate(-45deg);opacity:0 }  
+            5% { left: calc(360% - .17rem); top: 7.9rem; transform: rotate(45deg);opacity:0 }  
+            6% { left: calc(360% - .17rem); top: 7.85rem; transform: rotate(45deg);opacity:1 }  
+            24% { left: calc(360% - .17rem); top: .9rem; transform: rotate(45deg);opacity:1 }  
+            25% { left: calc(360% - .17rem); top: .8rem; transform: rotate(45deg);opacity:0 }  
+            26% { left: calc(360% + .1rem); top: .56rem; transform: rotate(135deg);opacity:0 }  
+            27% { left: calc(360% + .2rem); top: .56rem; transform: rotate(135deg);opacity:1 }  
+            53% { left: calc(360% + 12.75rem); top: .56rem; transform: rotate(135deg);opacity:1 }  
+            54% { left: calc(360% + 12.77rem); top: .56rem; transform: rotate(225deg);opacity:1 }  
+            68% { left: calc(360% + 12.77rem); top: 5.97rem; transform: rotate(225deg);opacity:1 }  
+            69% { left: calc(360% + 12.77rem); top: 5.97rem; transform: rotate(135deg);opacity:1 }  
+            77.5% { left: calc(360% + 16.1rem); top: 5.97rem; transform: rotate(135deg);opacity:1 }  
+            78.5% { left: calc(360% + 16.15rem); top: 5.97rem; transform: rotate(135deg);opacity:0 } 
+            79.5% { left: calc(360% + 16.34rem); top: 6.15rem; transform: rotate(225deg);opacity:0 } 
+            80.5% { left: calc(360% + 16.34rem); top: 6.25rem; transform: rotate(225deg);opacity:1 } 
+            81.5% { left: calc(360% + 16.34rem); top: 6.5rem; transform: rotate(225deg);opacity:0 } 
+            100% { left: calc(360% + 16.34rem); top: 6.6rem; transform: rotate(225deg);opacity:0 } 
+          }
+          @keyframes shanzengyouDouMove {
+            0% { left: calc(360% + .8rem); top: 5.32rem; transform: rotate(-45deg);opacity:0 }  
+            1% { left: calc(360% + .7rem); top: 5.32rem; transform: rotate(-45deg);opacity:1 }  
+            4% { left: calc(360% - .15rem); top: 5.32rem; transform: rotate(-45deg);opacity:1 }  
+            5% { left: calc(360% - .17rem); top: 5.32rem; transform: rotate(45deg);opacity:1 }  
+            16.5% { left: calc(360% - .17rem); top: .9rem; transform: rotate(45deg);opacity:1 }  
+            17.5% { left: calc(360% - .17rem); top: .8rem; transform: rotate(45deg);opacity:0 }  
+            18.5% { left: calc(360% + .1rem); top: .56rem; transform: rotate(135deg);opacity:0 }  
+            19.5% { left: calc(360% + .2rem); top: .56rem; transform: rotate(135deg);opacity:1 }  
+            45.5% { left: calc(360% + 12.75rem); top: .56rem; transform: rotate(135deg);opacity:1 }  
+            46.5% { left: calc(360% + 12.77rem); top: .56rem; transform: rotate(225deg);opacity:1 }  
+            60.5% { left: calc(360% + 12.77rem); top: 5.97rem; transform: rotate(225deg);opacity:1 }  
+            61.5% { left: calc(360% + 12.77rem); top: 5.97rem; transform: rotate(135deg);opacity:1 }  
+            70% { left: calc(360% + 16.1rem); top: 5.97rem; transform: rotate(135deg);opacity:1 }  
+            71% { left: calc(360% + 16.15rem); top: 5.97rem; transform: rotate(135deg);opacity:0 } 
+            72% { left: calc(360% + 16.34rem); top: 6.15rem; transform: rotate(225deg);opacity:0 } 
+            73% { left: calc(360% + 16.34rem); top: 6.25rem; transform: rotate(225deg);opacity:1 } 
+            74% { left: calc(360% + 16.34rem); top: 6.5rem; transform: rotate(225deg);opacity:0 } 
+            100% { left: calc(360% + 16.34rem); top: 6.6rem; transform: rotate(225deg);opacity:0 } 
+          }
+          @keyframes shanzengyouThreeMove {
+            0% { left: calc(360% + .8rem); top: 2.52rem; transform: rotate(-45deg);opacity:0 }  
+            1% { left: calc(360% + .7rem); top: 2.52rem; transform: rotate(-45deg);opacity:1 }  
+            4% { left: calc(360% - .15rem); top: 2.52rem; transform: rotate(-45deg);opacity:1 }  
+            5% { left: calc(360% - .17rem); top: 2.52rem; transform: rotate(45deg);opacity:1 }  
+            9% { left: calc(360% - .17rem); top: .9rem; transform: rotate(45deg);opacity:1 }  
+            10% { left: calc(360% - .17rem); top: .8rem; transform: rotate(45deg);opacity:0 }  
+            11% { left: calc(360% + .1rem); top: .56rem; transform: rotate(135deg);opacity:0 }  
+            12% { left: calc(360% + .2rem); top: .56rem; transform: rotate(135deg);opacity:1 }  
+            38% { left: calc(360% + 12.75rem); top: .56rem; transform: rotate(135deg);opacity:1 }  
+            39% { left: calc(360% + 12.77rem); top: .56rem; transform: rotate(225deg);opacity:1 }  
+            53% { left: calc(360% + 12.77rem); top: 5.97rem; transform: rotate(225deg);opacity:1 }  
+            54% { left: calc(360% + 12.77rem); top: 5.97rem; transform: rotate(135deg);opacity:1 }  
+            62.5% { left: calc(360% + 16.1rem); top: 5.97rem; transform: rotate(135deg);opacity:1 }  
+            63.5% { left: calc(360% + 16.15rem); top: 5.97rem; transform: rotate(135deg);opacity:0 } 
+            64.5% { left: calc(360% + 16.34rem); top: 6.15rem; transform: rotate(225deg);opacity:0 } 
+            65.5% { left: calc(360% + 16.34rem); top: 6.25rem; transform: rotate(225deg);opacity:1 } 
+            66.5% { left: calc(360% + 16.34rem); top: 6.5rem; transform: rotate(225deg);opacity:0 } 
+            100% { left: calc(360% + 16.34rem); top: 6.6rem; transform: rotate(225deg);opacity:0 } 
+          }
+
+          @keyframes jinzhiOneMove {
+            0% { left: calc(360% + .8rem); top: 8.12rem; transform: rotate(-45deg);opacity:0 }  
+            1% { left: calc(360% + .7rem); top: 8.12rem; transform: rotate(-45deg);opacity:1 }  
+            3% { left: calc(360% + .2rem); top: 8.12rem; transform: rotate(-45deg);opacity:1 }  
+            4% { left: calc(360% + .17rem); top: 8.12rem; transform: rotate(-45deg);opacity:0 }  
+            5% { left: calc(360% - .17rem); top: 7.9rem; transform: rotate(45deg);opacity:0 }  
+            6% { left: calc(360% - .17rem); top: 7.85rem; transform: rotate(45deg);opacity:1 }  
+            24% { left: calc(360% - .17rem); top: .9rem; transform: rotate(45deg);opacity:1 }  
+            25% { left: calc(360% - .17rem); top: .8rem; transform: rotate(45deg);opacity:0 }  
+            26% { left: calc(360% + .1rem); top: .56rem; transform: rotate(135deg);opacity:0 }  
+            27% { left: calc(360% + .2rem); top: .56rem; transform: rotate(135deg);opacity:1 }  
+            53% { left: calc(360% + 12.75rem); top: .56rem; transform: rotate(135deg);opacity:1 }  
+            54% { left: calc(360% + 12.77rem); top: .56rem; transform: rotate(225deg);opacity:1 }  
+            68.5% { left: calc(360% + 12.77rem); top: 6.25rem; transform: rotate(225deg);opacity:1 }  
+            69.5% { left: calc(360% + 12.77rem); top: 6.5rem; transform: rotate(225deg);opacity:0 }  
+            100% { left: calc(360% + 12.77rem); top: 6.6rem; transform: rotate(225deg);opacity:0 } 
+          }
+          @keyframes jinzhiDouMove {
+            0% { left: calc(360% + .8rem); top: 5.32rem; transform: rotate(-45deg);opacity:0 }  
+            1% { left: calc(360% + .7rem); top: 5.32rem; transform: rotate(-45deg);opacity:1 }  
+            4% { left: calc(360% - .15rem); top: 5.32rem; transform: rotate(-45deg);opacity:1 }  
+            5% { left: calc(360% - .17rem); top: 5.32rem; transform: rotate(45deg);opacity:1 }  
+            16.5% { left: calc(360% - .17rem); top: .9rem; transform: rotate(45deg);opacity:1 }  
+            17.5% { left: calc(360% - .17rem); top: .8rem; transform: rotate(45deg);opacity:0 }  
+            18.5% { left: calc(360% + .1rem); top: .56rem; transform: rotate(135deg);opacity:0 }  
+            19.5% { left: calc(360% + .2rem); top: .56rem; transform: rotate(135deg);opacity:1 }  
+            45.5% { left: calc(360% + 12.75rem); top: .56rem; transform: rotate(135deg);opacity:1 }  
+            46.5% { left: calc(360% + 12.77rem); top: .56rem; transform: rotate(225deg);opacity:1 }  
+            61% { left: calc(360% + 12.77rem); top: 6.25rem; transform: rotate(225deg);opacity:1 }  
+            62% { left: calc(360% + 12.77rem); top: 6.5rem; transform: rotate(225deg);opacity:0 } 
+            100% { left: calc(360% + 12.77rem); top: 6.6rem; transform: rotate(225deg);opacity:0 } 
+          }
+          @keyframes jinzhiThreeMove {
+            0% { left: calc(360% + .8rem); top: 2.52rem; transform: rotate(-45deg);opacity:0 }  
+            1% { left: calc(360% + .7rem); top: 2.52rem; transform: rotate(-45deg);opacity:1 }  
+            4% { left: calc(360% - .15rem); top: 2.52rem; transform: rotate(-45deg);opacity:1 }  
+            5% { left: calc(360% - .17rem); top: 2.52rem; transform: rotate(45deg);opacity:1 }  
+            9% { left: calc(360% - .17rem); top: .9rem; transform: rotate(45deg);opacity:1 }  
+            10% { left: calc(360% - .17rem); top: .8rem; transform: rotate(45deg);opacity:0 }  
+            11% { left: calc(360% + .1rem); top: .56rem; transform: rotate(135deg);opacity:0 }  
+            12% { left: calc(360% + .2rem); top: .56rem; transform: rotate(135deg);opacity:1 }  
+            38% { left: calc(360% + 12.75rem); top: .56rem; transform: rotate(135deg);opacity:1 }  
+            39% { left: calc(360% + 12.77rem); top: .56rem; transform: rotate(225deg);opacity:1 }  
+            53.5% { left: calc(360% + 12.77rem); top: 6.25rem; transform: rotate(225deg);opacity:1 }  
+            54.5% { left: calc(360% + 12.77rem); top: 6.5rem; transform: rotate(225deg);opacity:0 }  
+            100% { left: calc(360% + 12.77rem); top: 6.6rem; transform: rotate(225deg);opacity:0 }  
+          }
+
+          @keyframes zhanjiejiOneMove {
+            0% { left: calc(360% + .8rem); top: 8.12rem; transform: rotate(-45deg);opacity:0 }  
+            1% { left: calc(360% + .7rem); top: 8.12rem; transform: rotate(-45deg);opacity:1 }  
+            3% { left: calc(360% + .2rem); top: 8.12rem; transform: rotate(-45deg);opacity:1 }  
+            4% { left: calc(360% + .17rem); top: 8.12rem; transform: rotate(-45deg);opacity:0 }  
+            5% { left: calc(360% - .17rem); top: 7.9rem; transform: rotate(45deg);opacity:0 }  
+            6% { left: calc(360% - .17rem); top: 7.85rem; transform: rotate(45deg);opacity:1 }  
+            24% { left: calc(360% - .17rem); top: .9rem; transform: rotate(45deg);opacity:1 }  
+            25% { left: calc(360% - .17rem); top: .8rem; transform: rotate(45deg);opacity:0 }  
+            26% { left: calc(360% + .1rem); top: .56rem; transform: rotate(135deg);opacity:0 }  
+            27% { left: calc(360% + .2rem); top: .56rem; transform: rotate(135deg);opacity:1 }  
+            53% { left: calc(360% + 12.75rem); top: .56rem; transform: rotate(135deg);opacity:1 }  
+            54% { left: calc(360% + 12.77rem); top: .56rem; transform: rotate(225deg);opacity:1 }  
+            68% { left: calc(360% + 12.77rem); top: 5.97rem; transform: rotate(225deg);opacity:1 }  
+            69% { left: calc(360% + 12.77rem); top: 5.97rem; transform: rotate(315deg);opacity:1 }  
+            77.5% { left: calc(360% + 9.2rem); top: 5.97rem; transform: rotate(315deg);opacity:1 }  
+            78.5% { left: calc(360% + 9.2rem); top: 5.97rem; transform: rotate(225deg);opacity:1 } 
+            79.5% { left: calc(360% + 9.2rem); top: 6.25rem; transform: rotate(225deg);opacity:1 } 
+            80.5% { left: calc(360% + 9.2rem); top: 6.5rem; transform: rotate(225deg);opacity:0 } 
+            100% { left: calc(360% + 9.2rem); top: 6.6rem; transform: rotate(225deg);opacity:0 } 
+          }
+          @keyframes zhanjiejiDouMove {
+            0% { left: calc(360% + .8rem); top: 5.32rem; transform: rotate(-45deg);opacity:0 }  
+            1% { left: calc(360% + .7rem); top: 5.32rem; transform: rotate(-45deg);opacity:1 }  
+            4% { left: calc(360% - .15rem); top: 5.32rem; transform: rotate(-45deg);opacity:1 }  
+            5% { left: calc(360% - .17rem); top: 5.32rem; transform: rotate(45deg);opacity:1 }  
+            16.5% { left: calc(360% - .17rem); top: .9rem; transform: rotate(45deg);opacity:1 }  
+            17.5% { left: calc(360% - .17rem); top: .8rem; transform: rotate(45deg);opacity:0 }  
+            18.5% { left: calc(360% + .1rem); top: .56rem; transform: rotate(135deg);opacity:0 }  
+            19.5% { left: calc(360% + .2rem); top: .56rem; transform: rotate(135deg);opacity:1 }  
+            45.5% { left: calc(360% + 12.75rem); top: .56rem; transform: rotate(135deg);opacity:1 }  
+            46.5% { left: calc(360% + 12.77rem); top: .56rem; transform: rotate(225deg);opacity:1 }  
+            60.5% { left: calc(360% + 12.77rem); top: 5.97rem; transform: rotate(225deg);opacity:1 }  
+            61.5% { left: calc(360% + 12.77rem); top: 5.97rem; transform: rotate(315deg);opacity:1 }  
+            70% { left: calc(360% + 9.2rem); top: 5.97rem; transform: rotate(315deg);opacity:1 }  
+            71% { left: calc(360% + 9.2rem); top: 5.97rem; transform: rotate(225deg);opacity:1 } 
+            72% { left: calc(360% + 9.2rem); top: 6.25rem; transform: rotate(225deg);opacity:1 } 
+            73% { left: calc(360% + 9.2rem); top: 6.5rem; transform: rotate(225deg);opacity:0 } 
+            100% { left: calc(360% + 9.2rem); top: 6.6rem; transform: rotate(225deg);opacity:0 } 
+          }
+          @keyframes zhanjiejiThreeMove {
+            0% { left: calc(360% + .8rem); top: 2.52rem; transform: rotate(-45deg);opacity:0 }  
+            1% { left: calc(360% + .7rem); top: 2.52rem; transform: rotate(-45deg);opacity:1 }  
+            4% { left: calc(360% - .15rem); top: 2.52rem; transform: rotate(-45deg);opacity:1 }  
+            5% { left: calc(360% - .17rem); top: 2.52rem; transform: rotate(45deg);opacity:1 }  
+            9% { left: calc(360% - .17rem); top: .9rem; transform: rotate(45deg);opacity:1 }  
+            10% { left: calc(360% - .17rem); top: .8rem; transform: rotate(45deg);opacity:0 }  
+            11% { left: calc(360% + .1rem); top: .56rem; transform: rotate(135deg);opacity:0 }  
+            12% { left: calc(360% + .2rem); top: .56rem; transform: rotate(135deg);opacity:1 }  
+            38% { left: calc(360% + 12.75rem); top: .56rem; transform: rotate(135deg);opacity:1 }  
+            39% { left: calc(360% + 12.77rem); top: .56rem; transform: rotate(225deg);opacity:1 }  
+            53% { left: calc(360% + 12.77rem); top: 5.97rem; transform: rotate(225deg);opacity:1 }  
+            54% { left: calc(360% + 12.77rem); top: 5.97rem; transform: rotate(315deg);opacity:1 }  
+            62.5% { left: calc(360% + 9.2rem); top: 5.97rem; transform: rotate(315deg);opacity:1 }  
+            63.5% { left: calc(360% + 9.2rem); top: 5.97rem; transform: rotate(225deg);opacity:1 } 
+            64.5% { left: calc(360% + 9.2rem); top: 6.25rem; transform: rotate(225deg);opacity:1 } 
+            65.5% { left: calc(360% + 9.2rem); top: 6.5rem; transform: rotate(225deg);opacity:0 } 
+            100% { left: calc(360% + 9.2rem); top: 6.6rem; transform: rotate(225deg);opacity:0 } 
+          }
+
+          @keyframes gaizhiliqingOneMove {
+            0% { left: calc(360% + .8rem); top: 8.12rem; transform: rotate(-45deg);opacity:0 }  
+            1% { left: calc(360% + .7rem); top: 8.12rem; transform: rotate(-45deg);opacity:1 }  
+            3% { left: calc(360% + .2rem); top: 8.12rem; transform: rotate(-45deg);opacity:1 }  
+            4% { left: calc(360% + .17rem); top: 8.12rem; transform: rotate(-45deg);opacity:0 }  
+            5% { left: calc(360% - .17rem); top: 7.9rem; transform: rotate(45deg);opacity:0 }  
+            6% { left: calc(360% - .17rem); top: 7.85rem; transform: rotate(45deg);opacity:1 }  
+            24% { left: calc(360% - .17rem); top: .9rem; transform: rotate(45deg);opacity:1 }  
+            25% { left: calc(360% - .17rem); top: .8rem; transform: rotate(45deg);opacity:0 }  
+            26% { left: calc(360% + .1rem); top: .56rem; transform: rotate(135deg);opacity:0 }  
+            27% { left: calc(360% + .2rem); top: .56rem; transform: rotate(135deg);opacity:1 }  
+            53% { left: calc(360% + 12.75rem); top: .56rem; transform: rotate(135deg);opacity:1 }  
+            54% { left: calc(360% + 12.77rem); top: .56rem; transform: rotate(225deg);opacity:1 }  
+            68% { left: calc(360% + 12.77rem); top: 5.97rem; transform: rotate(225deg);opacity:1 }  
+            69% { left: calc(360% + 12.77rem); top: 5.97rem; transform: rotate(315deg);opacity:1 }  
+            85% { left: calc(360% + 6rem); top: 5.97rem; transform: rotate(315deg);opacity:1 }  
+            86% { left: calc(360% + 5.9rem); top: 5.97rem; transform: rotate(315deg);opacity:0 } 
+            87% { left: calc(360% + 5.63rem); top: 6.15rem; transform: rotate(225deg);opacity:0 } 
+            88% { left: calc(360% + 5.63rem); top: 6.25rem; transform: rotate(225deg);opacity:1 } 
+            89% { left: calc(360% + 5.63rem); top: 6.5rem; transform: rotate(225deg);opacity:0 } 
+            100% { left: calc(360% + 5.63rem); top: 6.6rem; transform: rotate(225deg);opacity:0 } 
+          }
+          @keyframes gaizhiliqingDouMove {
+            0% { left: calc(360% + .8rem); top: 5.32rem; transform: rotate(-45deg);opacity:0 }  
+            1% { left: calc(360% + .7rem); top: 5.32rem; transform: rotate(-45deg);opacity:1 }  
+            4% { left: calc(360% - .15rem); top: 5.32rem; transform: rotate(-45deg);opacity:1 }  
+            5% { left: calc(360% - .17rem); top: 5.32rem; transform: rotate(45deg);opacity:1 }  
+            16.5% { left: calc(360% - .17rem); top: .9rem; transform: rotate(45deg);opacity:1 }  
+            17.5% { left: calc(360% - .17rem); top: .8rem; transform: rotate(45deg);opacity:0 }  
+            18.5% { left: calc(360% + .1rem); top: .56rem; transform: rotate(135deg);opacity:0 }  
+            19.5% { left: calc(360% + .2rem); top: .56rem; transform: rotate(135deg);opacity:1 }  
+            45.5% { left: calc(360% + 12.75rem); top: .56rem; transform: rotate(135deg);opacity:1 }  
+            46.5% { left: calc(360% + 12.77rem); top: .56rem; transform: rotate(225deg);opacity:1 }  
+            60.5% { left: calc(360% + 12.77rem); top: 5.97rem; transform: rotate(225deg);opacity:1 }  
+            61.5% { left: calc(360% + 12.77rem); top: 5.97rem; transform: rotate(315deg);opacity:1 }  
+            77.5% { left: calc(360% + 6rem); top: 5.97rem; transform: rotate(315deg);opacity:1 }  
+            78.5% { left: calc(360% + 5.9rem); top: 5.97rem; transform: rotate(315deg);opacity:0 } 
+            79.5% { left: calc(360% + 5.63rem); top: 6.15rem; transform: rotate(225deg);opacity:0 } 
+            80.5% { left: calc(360% + 5.63rem); top: 6.25rem; transform: rotate(225deg);opacity:1 } 
+            81.5% { left: calc(360% + 5.63rem); top: 6.5rem; transform: rotate(225deg);opacity:0 } 
+            100% { left: calc(360% + 5.63rem); top: 6.6rem; transform: rotate(225deg);opacity:0 } 
+          }
+          @keyframes gaizhiliqingThreeMove {
+            0% { left: calc(360% + .8rem); top: 2.52rem; transform: rotate(-45deg);opacity:0 }  
+            1% { left: calc(360% + .7rem); top: 2.52rem; transform: rotate(-45deg);opacity:1 }  
+            4% { left: calc(360% - .15rem); top: 2.52rem; transform: rotate(-45deg);opacity:1 }  
+            5% { left: calc(360% - .17rem); top: 2.52rem; transform: rotate(45deg);opacity:1 }  
+            9% { left: calc(360% - .17rem); top: .9rem; transform: rotate(45deg);opacity:1 }  
+            10% { left: calc(360% - .17rem); top: .8rem; transform: rotate(45deg);opacity:0 }  
+            11% { left: calc(360% + .1rem); top: .56rem; transform: rotate(135deg);opacity:0 }  
+            12% { left: calc(360% + .2rem); top: .56rem; transform: rotate(135deg);opacity:1 }  
+            38% { left: calc(360% + 12.75rem); top: .56rem; transform: rotate(135deg);opacity:1 }  
+            39% { left: calc(360% + 12.77rem); top: .56rem; transform: rotate(225deg);opacity:1 }  
+            53% { left: calc(360% + 12.77rem); top: 5.97rem; transform: rotate(225deg);opacity:1 }  
+            54% { left: calc(360% + 12.77rem); top: 5.97rem; transform: rotate(315deg);opacity:1 }  
+            70% { left: calc(360% + 6rem); top: 5.97rem; transform: rotate(315deg);opacity:1 }  
+            71% { left: calc(360% + 5.9rem); top: 5.97rem; transform: rotate(315deg);opacity:0 } 
+            72% { left: calc(360% + 5.63rem); top: 6.15rem; transform: rotate(225deg);opacity:0 } 
+            73% { left: calc(360% + 5.63rem); top: 6.25rem; transform: rotate(225deg);opacity:1 } 
+            74% { left: calc(360% + 5.63rem); top: 6.5rem; transform: rotate(225deg);opacity:0 } 
+            100% { left: calc(360% + 5.63rem); top: 6.6rem; transform: rotate(225deg);opacity:0 } 
+          }
+    }
+}
